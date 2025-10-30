@@ -12,7 +12,10 @@ Alcance: visualización de estrellas brillantes en hemisferio norte y sur, con p
 <img width="795" height="510" alt="image" src="https://github.com/user-attachments/assets/5e316c3a-fbb8-42b3-8602-2bc1bad8d35f" />
 
 # Requisitos
-
+- Arduino UNO o Nano
+- GPS NEO-6M
+- Pantalla TFT ILI9341
+- Librerías: Adafruit_GFX, Adafruit_ILI9341, TinyGPSPlus
 
 # ¿Cómo funciona internamente?
 Arquitectura general:
@@ -58,14 +61,16 @@ Instalación:
     Adafruit_ILI9341
     TinyGPSPlus
 
-3. Cargar el código en tu Arduino.
+3. Cargar el código `sketch.ino` en tu Arduino.
 4. Conectar el GPS y la pantalla según el pinout del sketch.
-5. Abrir el monitor serie para verificar que el GPS obtiene señal.
+5. Verifica que el GPS obtenga señal.
 
 
 Ejecución:
 Encender el sistema y esperar la señal del GPS.
 
+Uso:
+El sistema dibuja un cielo dinámico con estrellas reales, mostrando latitud, longitud y orientación en la pantalla.
 
 En la pantalla aparecerán:
 1. Coordenadas LAT/LON.
