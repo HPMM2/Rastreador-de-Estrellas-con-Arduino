@@ -9,6 +9,9 @@ El propósito del proyecto es visualizar datos GPS de forma clara y atractiva, d
 Contexto: Este proyecto fue hecho por estudiantes para estudiantes, aficionados o campistas que deseen identificar estrellas visibles.
 Alcance: visualización de estrellas brillantes en hemisferio norte y sur, con posibilidad de ampliación del catálogo estelar.
 
+<img width="795" height="510" alt="image" src="https://github.com/user-attachments/assets/5e316c3a-fbb8-42b3-8602-2bc1bad8d35f" />
+
+
 # ¿Cómo funciona internamente?
 Arquitectura general:
 1. El módulo GPS envía datos NMEA vía puerto serial al Arduino.
@@ -17,24 +20,32 @@ Arquitectura general:
 4. La pantalla ILI9341, controlada por Adafruit_GFX, dibuja en tiempo real las estrellas y la animación del cielo.
 
 Estructura de carpetas:
+
 /src
+
   ├── sketch.ino
-  ├── diagram.json  
+
+  ├── diagram.json 
+  
   ├── gps-neo6m.chip.c
+  
   ├── gps-neo6m.chip.json  
+  
   ├── libraries.txt  
+  
   ├── wokwi-project.txt  
 
+<img width="795" height="586" alt="image" src="https://github.com/user-attachments/assets/a97c1eb3-4064-4fc8-82cc-635ebb55c2ca" />
 
 Tecnologías usadas:
-Lenguaje C (Arduino)
-Librerías: Adafruit_GFX.h, Adafruit_ILI9341.h, TinyGPSPlus.h
-Hardware: Arduino UNO, GPS NEO-6M, pantalla TFT ILI9341
+- Lenguaje C (Arduino)
+- Librerías: Adafruit_GFX.h, Adafruit_ILI9341.h, TinyGPSPlus.h
+- Hardware: Arduino UNO, GPS NEO-6M, pantalla TFT ILI9341
 
 Comunicación entre módulos:
-GPS → Arduino: Comunicación serie (TX/RX).
-Arduino → TFT: Comunicación SPI.
-Procesamiento interno: Cálculos matemáticos y animación gráfica.
+- GPS → Arduino: Comunicación serie (TX/RX).
+- Arduino → TFT: Comunicación SPI.
+- Procesamiento interno: Cálculos matemáticos y animación gráfica.
 
 
 # ¿Cómo se usa?
@@ -49,8 +60,10 @@ Instalación:
 4. Conectar el GPS y la pantalla según el pinout del sketch.
 5. Abrir el monitor serie para verificar que el GPS obtiene señal.
 
+
 Ejecución:
 Encender el sistema y esperar la señal del GPS.
+
 
 En la pantalla aparecerán:
 1. Coordenadas LAT/LON.
