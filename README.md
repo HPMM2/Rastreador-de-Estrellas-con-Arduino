@@ -11,6 +11,8 @@ Alcance: visualización de estrellas brillantes en hemisferio norte y sur, con p
 
 <img width="795" height="510" alt="image" src="https://github.com/user-attachments/assets/5e316c3a-fbb8-42b3-8602-2bc1bad8d35f" />
 
+# Requisitos
+
 
 # ¿Cómo funciona internamente?
 Arquitectura general:
